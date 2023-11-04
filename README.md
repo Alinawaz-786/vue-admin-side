@@ -1,4 +1,5 @@
-# Vue.js Project Setup
+# Vue Admin Side 
+## Project Setup
 
 This guide will help you set up and run a Vue.js project along with a JSON server. Please make sure you have Vue.js installed, and if not, follow the installation steps below.
 
