@@ -39,7 +39,7 @@ export default {
     getData() {
       const data = JSON.parse(localStorage.getItem("user"));
       if (!data) {
-        router.push("/login");
+        router.push("/");
       } else {
         this.username = data.userName;
         this.email = data.email;
@@ -47,7 +47,7 @@ export default {
     },
     logout() {
       localStorage.removeItem("user");
-      router.push("/login");
+      router.push("/");
     },
   },
   mounted() {
