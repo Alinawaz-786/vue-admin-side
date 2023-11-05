@@ -1,22 +1,14 @@
 <template>
   <form name="login-form" class="login-form">
+ 
+
     <div class="form-group">
       <label for="username">Username:</label>
-      <input
-        type="text"
-        id="username"
-        v-model="username"
-        class="form-control"
-      />
+      <input type="text" id="username" v-model="username" class="form-control" />
     </div>
     <div class="form-group">
       <label for="password">Password:</label>
-      <input
-        type="password"
-        id="password"
-        v-model="password"
-        class="form-control"
-      />
+      <input type="password" id="password" v-model="password" class="form-control" />
     </div>
     <button class="btn btn-primary" type="submit" @click.prevent="login">
       Login
@@ -27,12 +19,14 @@
 <script>
 import router from "../router/index"; // Update with the actual path to your router configuration
 import axios from "axios";
+
 export default {
   name: "LoginView",
   data() {
     return {
       username: "",
       password: "",
+
     };
   },
   methods: {
@@ -82,12 +76,23 @@ export default {
 
 <style scoped>
 .login-form {
-  max-width: 300px;
   margin: auto;
   padding: 50px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f5f5f5;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -150px;
+
+  width:100 px;
+   height:100 px; 
+   background:url('../assets/logo.png') no-repeat;
+   background-size: 300px 300px;
+   background-position:center;
+
 }
 
 .form-group {
